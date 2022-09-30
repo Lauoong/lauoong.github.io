@@ -1,120 +1,210 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>8.30
-</title>
-
-
-
-<!--java-->
+<title>页面</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <style>
-div.time{color:#FFF; text-align:center; font-size:36px;}
-div.right{float:right;}
-div.lift{float:left:}
-</style>
-
-<script>
-function startTime(){
-	var today=new Date();
-	var h=today.getHours();
-	var m=today.getMinutes();
-	var s=today.getSeconds();// 在小于10的数字前加一个‘0’
-	m=checkTime(m);
-	s=checkTime(s);
-	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-	t=setTimeout(function(){startTime()},500);
+* {
+    box-sizing: border-box;
 }
-function checkTime(i){
-	if (i<10){
-		i="0" + i;
-	}
-	return i;
-}
-</script>
 
-
-<style>
-body {background-image:url('https://img.alicdn.com/imgextra/i2/2201226909556/O1CN01EYKejC2KSha1aHZN9_!!2201226909556.jpg');
-background-repeat:no-repeat;
-background-attachment:fixed;}
-
-
-.content {
-    max-width: 1210px;
+/* body 样式 */
+body {
+    font-family: Arial;
     margin: auto;
-    background: no-repeat;
-	padding: 50px;}
-
-</style>
-
-
-<style>
-a:link,a:visited
-{
-	display:block;
-	font-weight:bold;
-	color:#FFFFFF;
-	background-color: transparent;
-	width:1210px;
-	text-align: left;
-	padding:4px;
-	text-decoration:none;
-	
 }
-a:hover,a:active
-{
-	background-color: #96b97d;
-	font-size:102%;}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
 }
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+	max-width: 1210px;
+	margin: auto;
+}
+
+/* 创建三个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 第三列 */
+.three {   
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 0px;
+}
+/*关于我的底图*/
+.me {width: 100%;
+    height: auto;
+    background-image: url('https://img.alicdn.com/imgextra/i4/2201226909556/O1CN01GmZv0A2KShaOpqXMD_!!2201226909556.png');
+    background-size: cover;
+	}
+.to {width: 100%;
+    height: auto;
+	background-size: cover;
+	margin-bottom:-4px;
+	}
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+	margin-top: 20px;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: left;
+        width: auto;
+		height: 100%;
+    }
+
+}
+
+/*鼠标选中特效*/
+.lau{ opacity:0;
+transition:all 0.8s;
+}
+.lau:hover{opacity:1;
+}
+
 </style>
-
-->
-<style>
-h1 {text-align:center; color:#FFF;}
-p.date {text-align:right;}
-p.two {text-align:justify;}
-
-p.0 {text-align:center;}
-p.1 {text-decoration:overline;}
-p.2 {text-decoration:line-through;}
-p.3 {text-decoration:underline;}
-</style>
-
-
-
-
-<style>
-p {line-height:200%;}
-</style>
-
-
-
-<body>
-<div class="content">
-<div id="txt" class="time"></div>
-</body>
-
-
-
-<body onLoad="startTime()">
-<br/>
-<hr>
-<br/>
-
-<font size="3" color="#96b97d";>
-
-<p><b>天行数据</b><a href="https://www.tianapi.com/login.html" target="_blank">https://www.tianapi.com/login.html</a></p>
-
-<p><b>微信公众平台-测试号</b><a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login" target="_blank">https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login</a></p>
-
-<p><b>早安推送教学</b><a href="https://blog.csdn.net/m0_38130105/article/details/126160873?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22126160873%22%2C%22source%22%3A%22m0_38130105%22%7D&ctrtid=U0GIl" target="_blank">https://blog.csdn.net/m0_38130105/article/details/126160873?csdn_share_tail</a></p>
-
-<p><b>网站后台搭建教学</b><a href="https://www.cnblogs.com/logic-hatten/p/10706606.html" target="_blank">https://www.cnblogs.com/logic-hatten/p/10706606.html</a></p>
-
-
-</font>
-</div>
-</body>
 </head>
+<body>
+
+<div class="header">
+  <h1>网页测试实例</h1>
+  <p>创建一个页面。</p>
+</div>
+
+<div class="navbar">
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#" class="right">链接</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>关于我</h2>
+      <h5>我的照片:</h5>
+      <div class="me">
+      <div class="lau"><img src="https://img.alicdn.com/imgextra/i2/2201226909556/O1CN01EEZcPG2KShaa9l69h_!!2201226909556.png" alt="上层.png" class="to"/></div></div>
+      <p>关于我的介绍..</p>
+      <h3>更多内容</h3>
+      <p>我的更多内容</p>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div>
+  </div>
+  <div class="main">
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>They who cannot do as they would, must do as they can.
+不能如愿而行，也须尽力而为。</p>
+      <br>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>They who cannot do as they would, must do as they can.
+不能如愿而行，也须尽力而为。</p>
+  </div>
+  
+ <div class="three">
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>They who cannot do as they would, must do as they can.
+不能如愿而行，也须尽力而为。</p>
+      <br>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>They who cannot do as they would, must do as they can.
+不能如愿而行，也须尽力而为。</p>
+  </div>  
+</div>
+
+<div class="footer">
+  <h2>底部内容</h2>
+</div>
+
+</body>
 </html>
