@@ -137,12 +137,19 @@ max-width: 100%;
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
 @media screen and (max-width: 700px) {
     .row {   
-        flex-direction: column;
-		width: 100%;
+        flex-direction: column;}
+	.side {
 		height: auto;
 		background-size: cover;
-
     }
+	.main {
+		height: auto;
+		background-size: cover;
+		}
+	.three {
+		height: auto;
+		background-size: cover;}
+	
 	
 }
 
