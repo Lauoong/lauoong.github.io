@@ -138,14 +138,15 @@ max-width: 100%;
 @media screen and (max-width: 700px) {
     .row {   
         flex-direction: column;
-		
-		
-		
+		width: 100%;
+		height: auto;
+		background-size: cover;
+
     }
 	
 }
 
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目高度不变向左靠 */
 @media screen and (max-width: 400px) {
     .navbar a {
         float: left;
