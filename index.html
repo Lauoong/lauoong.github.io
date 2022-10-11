@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The world of Lauoong</title>
+<title>页面</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <style>
@@ -27,6 +27,9 @@ body {
 .header h1 {
     font-size: 40px;
 }
+
+/* li的字体 */
+li {font-size:10px;}
 
 /* 导航 */
 .navbar {
@@ -63,6 +66,8 @@ body {
     flex-wrap: wrap;
 	max-width: 1210px;
 	margin: auto;
+	
+	
 }
 
 /* 创建三个列 */
@@ -72,6 +77,9 @@ body {
     flex: 20%;
     background-color: #f1f1f1;
     padding: 20px;
+	height:auto;
+	
+   
 }
 
 /* 主要的内容区域 */
@@ -80,6 +88,9 @@ body {
     flex: 60%;
     background-color: white;
     padding: 20px;
+	height:auto;
+	
+
 }
 
 /* 第三列 */
@@ -88,6 +99,8 @@ body {
     flex: 20%;
     background-color: #f1f1f1;
     padding: 20px;
+	height:auto;
+	
 }
 
 /* 测试图片 */
@@ -119,11 +132,11 @@ body {
 @media screen and (max-width: 700px) {
     .row {   
         flex-direction: column;
+		
     }
 	.side {width: 100%;
     height: auto;
 	background-size: cover;}
-
 
 }
 
@@ -149,8 +162,8 @@ transition:all 0.8s;
 <body>
 
 <div class="header">
-  <h1>网页测试实例</h1>
-  <p>创建一个页面。</p>
+  <h1>测试页面</h1>
+  <p>创个副标题</p>
 </div>
 
 <div class="navbar">
@@ -166,12 +179,20 @@ transition:all 0.8s;
       <h5>我的照片:</h5>
       <div class="me">
       <div class="lau"><img src="https://img.alicdn.com/imgextra/i2/2201226909556/O1CN01EEZcPG2KShaa9l69h_!!2201226909556.png" alt="上层.png" class="to"/></div></div>
-      <p>关于我的介绍..</p>
+
+<ul>
+<li><p>- 👋 Hi, I’m @Lauoong</p></li>
+<li><p>- 👀 00后，男生，喜欢记录一些生活趣事和技术分享</p></li>
+<li><p>- 🌱 Lauoong是我自己设计的全名的简写，并无他意</p></li>
+<li><p>- 💞️ 微博、bilibili名字都叫 刘刘Lauoong</p></li>
+<li><p>- 📫 个人邮箱：1596276068@qq.com</p></li>
+</ul>
+
       <h3>更多内容</h3>
       <p>我的更多内容</p>
-      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
-      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
-      <div class="fakeimg" style="height:60px;">这边插入图像</div>
+      <div class="fakeimg" style="height:60px;">图像</div><br>
+      <div class="fakeimg" style="height:60px;">图像</div><br>
+      <div class="fakeimg" style="height:60px;">图像</div>
   </div>
   <div class="main">
       <h2>标题</h2>
