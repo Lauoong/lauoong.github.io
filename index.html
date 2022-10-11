@@ -137,16 +137,21 @@ max-width: 100%;
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
 @media screen and (max-width: 700px) {
     .row {   
-        flex-direction: column;}
+        flex-direction: column;
+		}
 	.side {
+		width: auto;
 		height: auto;
 		background-size: cover;
+		
     }
 	.main {
+		width: auto;
 		height: auto;
 		background-size: cover;
 		}
 	.three {
+		width: auto;
 		height: auto;
 		background-size: cover;}
 	
@@ -202,9 +207,9 @@ transition:all 0.8s;
 
       <h3>更多内容</h3>
       <p>我的更多内容</p>
-      <div class="fakeimg" style="height:60px;">图像</div><br>
-      <div class="fakeimg" style="height:60px;">图像</div><br>
-      <div class="fakeimg" style="height:60px;">图像</div>
+      <div class="fakeimg" style="height:60px;">图像</div><br/>
+      <div class="fakeimg" style="height:100px;">图像</div><br/>
+      <div class="fakeimg" style="height:100px;">图像</div>
   </div>
   <div class="main">
       <h2>标题</h2>
