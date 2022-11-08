@@ -4,7 +4,8 @@
 <title>The world of Lauoong</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<style>
+<link rel="stylesheet" type="text/css" href="src/css/css base.css">
+<style type="text/css">
 * {
     box-sizing: border-box;
 }
@@ -13,168 +14,9 @@
 body {
     font-family: Arial;
     margin: auto;
-}
-
-/* 标题 */
-.header {
-    padding: 80px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-}
-
-/* 标题字体加大 */
-.header h1 {
-    font-size: 40px;
-}
-
-/* li的字体 */
-.li {font-size:10px;
-height:auto;
-max-width: 100%;
-
-
-
-}
-
-/* 导航 */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-}
-
-/* 导航栏样式 */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-/* 右侧链接*/
-.navbar a.right {
-    float: right;
-}
-
-/* 鼠标移动到链接的颜色 */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* 列容器 */
-.row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-	max-width: 1210px;
-	margin: auto;
-	
-
-}
-
-/* 创建三个列 */
-/* 边栏 */
-.side {
-    -ms-flex: 20%; /* IE10 */
-    flex: 20%;
-    background-color: #f1f1f1;
-    padding: 20px;
-	height:auto;
-	
-   
-}
-
-/* 主要的内容区域 */
-.main {   
-    -ms-flex: 60%; /* IE10 */
-    flex: 60%;
-    background-color: white;
-    padding: 20px;
-	height:auto;
-	
-
-}
-
-/* 第三列 */
-.three {   
-    -ms-flex: 20%; /* IE10 */
-    flex: 20%;
-    background-color: #f1f1f1;
-    padding: 20px;
-	height:auto;
 	
 }
 
-/* 测试图片 */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 0px;
-}
-/*关于我的底图*/
-.me {width: 100%;
-    height: auto;
-    background-image: url('https://img.alicdn.com/imgextra/i4/2201226909556/O1CN01GmZv0A2KShaOpqXMD_!!2201226909556.png');
-    background-size: cover;
-	}
-.to {width: 100%;
-    height: auto;
-	background-size: cover;
-	margin-bottom:-4px;
-	}
-/* 底部 */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-	margin-top: 20px;
-}
-
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 480px 时, 让每栏上下堆叠显示 */
-@media screen and (max-width: 480px) {
-    .row {   
-        flex-direction: column;
-		}
-	.side {
-		width:100%;
-		height: auto;
-		background-size: cover;
-		
-    }
-	.main {
-		width:100%;
-		height: auto;
-		background-size: cover;
-		}
-	.three {
-		width:100%;
-		height: auto;
-		background-size: cover;}
-	
-	
-}
-
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目高度不变向左靠 */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: left;
-        width: auto;
-		height: 100%;
-    }
-
-}
-
-/*鼠标选中特效*/
-.lau{ opacity:0;
-transition:all 0.8s;
-}
-.lau:hover{opacity:1;
-
-}
 
 </style>
 </head>
@@ -183,21 +25,23 @@ transition:all 0.8s;
 <div class="header">
   <h1>测试页面</h1>
   <p>创个副标题</p>
-</div>
-
-<div class="navbar">
-  <a href="https://lauoong.notion.site/Pet-records-3a9836277e134bfd85d80954d962ed48" target="_blank">猫肥家润</a>
+  <br/>
+  <div class="navbar">
+  <a href="#https://lauoong.notion.site/Pet-records-3a9836277e134bfd85d80954d962ed48" target="_blank">猫肥家润</a>
   <a href="#">链接</a>
   <a href="#">链接</a>
   <a href="#" class="right">链接</a>
 </div>
+</div>
+
+
 
 <div class="row">
   <div class="side">
       <h2>关于我</h2>
       <h5>我的照片:</h5>
       <div class="me">
-      <div class="lau"><img src="https://img.alicdn.com/imgextra/i2/2201226909556/O1CN01EEZcPG2KShaa9l69h_!!2201226909556.png" alt="上层.png" class="to"/></div></div>
+      <div class="lau"><img src="src/assets/headshot.2.jpg" class="to"/></div></div>
 <div class="li">
 <p>- 👋 Hi, I’m @Lauoong</p>
 <p>- 👀 00后，男生，喜欢记录一些生活趣事和技术分享</p>
