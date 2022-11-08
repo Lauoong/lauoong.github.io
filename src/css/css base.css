@@ -110,7 +110,7 @@ max-width: 100%;
 /*关于我的底图*/
 .me {width: 100%;
     height: auto;
-    background-image: url('头像.jpg');
+    background-image: url('src/assets/headshot.1.jpg');
     background-size: cover;
 	}
 .to {width: 100%;
