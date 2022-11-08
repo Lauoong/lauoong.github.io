@@ -1,0 +1,30 @@
+@charset "utf-8";
+<style type="text/css">
+#body gradienr {
+    background: linear-gradient(168deg, #346d83, #88bdd2, #f5ca82, #bd6688, #4facb5, #40993b, #5e3b99);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: AnimationName 43s ease infinite;
+    -moz-animation: AnimationName 43s ease infinite;
+    animation: AnimationName 43s ease infinite;
+	
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:40% 0%}
+    50%{background-position:61% 100%}
+    100%{background-position:40% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:40% 0%}
+    50%{background-position:61% 100%}
+    100%{background-position:40% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:40% 0%}
+    50%{background-position:61% 100%}
+    100%{background-position:40% 0%}
+}
+
+</style>
