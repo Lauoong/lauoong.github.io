@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @Lauoong
-- 👀 00后，男生，喜欢记录一些生活趣事和技术分享
-- 🌱 Lauoong是我自己设计的全名的简写，并无他意
-- 💞️ 微博、bilibili名字都叫 刘刘Lauoong
-- 📫 个人邮箱：1596276068@qq.com
+第二版完整的页面
+用了两个列容器，上分3列，下分两列，下面列容器设了区域最大值max-height和overflow-y
+用 ：：-webkit-scrollbar ｛display：none；｝隐藏滚动条
+每一列新加一个margin:0px 5px 0px 5px;
+修改了导航栏的选中效果，padding-bottom: 11px;border-bottom: 3px solid #ffc001;修改了导航栏的小屏幕显示的大小
