@@ -150,8 +150,8 @@ max-width: 100%;
 	margin-top: 20px;
 }
 
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 480px 时, 让每栏上下堆叠显示 */
-@media screen and (max-width: 480px) {
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 600px 时, 让每栏上下堆叠显示 */
+@media screen and (max-width: 600px) {
     .row {   
         flex-direction: column;
 		padding:10px;
@@ -193,8 +193,8 @@ max-width: 100%;
 	
 }
 
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目高度不变向左靠 */
-@media screen and (max-width: 400px) {
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 600px 时, 让导航栏目高度减半且向左靠 */
+@media screen and (max-width: 600px) {
     .navbar a {
         float: left;
         width: auto;
