@@ -144,9 +144,16 @@ max-width: 100%;
 	
 /* 测试图片 */
 .fakeimg {
-    background-color: #aaa;
+    background-color: #FFF;
     width: auto;
     padding: 0px;
+	border-radius:5px;
+}
+.fakeimg-gradient {
+    background: linear-gradient(to bottom, transparent, #CCC);
+    width: auto;
+    padding: 0px;
+	border-radius:5px;
 }
 
 /* 底部 */
